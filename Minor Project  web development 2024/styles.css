@@ -1,0 +1,378 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #081b29;
+    color: white;
+    width: 100%;
+    max-width: auto;
+    height: 80%;
+
+}
+
+header {
+   
+    color: #fff;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #085098;
+}
+
+#nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header .hero{
+    background: url(india2.jpg);
+}
+
+.hero {
+background: url( india2.jpg);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 4.5em;
+    
+
+
+   }
+
+
+
+
+
+.about{
+    background-color: #081b29;
+}
+
+.about, .places, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about .container, .places .container, .contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    height: 80%;
+}
+
+
+.about h2{
+         font-size: 3.5em;
+         position: relative;
+         letter-spacing: 15px;
+         color: #0e3742;
+         text-transform: uppercase;
+         width: 100%;
+         text-align: center;
+         -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+         line-height: 0.70em;
+         outline: none;
+                    animation: animate 5s linear infinite;}
+         
+     
+@keyframes animate 
+{
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+            {
+               color: #0e3742;
+               box-shadow: none;
+            }
+
+    
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+            {
+               color: #0fff;
+             box-shadow: 0 0 10px #03bcf4,
+               0 0 20px #03bcf4,
+               0 0 30px #03bcf4,
+               0 0 40px #03bcf4,
+               0 0 50px #03bcf4,
+               0 0 60px #03bcf4;
+
+
+            }
+
+
+
+        }
+
+
+
+
+.place-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: url( aser.png);
+    border: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 30%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px #03bcf4;
+    transition: transform 0.3s;
+}
+
+
+.card img {
+    width: 70%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 15px;
+    background: transparent;
+}
+
+.card p {
+    padding: 0 15px 15px;
+}
+
+.btn-box{
+background-color:#007bff;
+color:#ffffff;
+padding: 10px 20px;
+text-decoration: solid;
+border-radius: 5px;
+border: white;
+cursor: pointer;
+
+
+transition: background-color 0.3s, transform 0.3s;
+
+}
+
+
+.btn-box:hover{
+
+transform: scale(1.1);
+background-color: #0056b3;
+
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #081b29;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background: #555;
+}
+
+footer {
+    background: url(feathered-mountain-footer-100.webp) repeat-x;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.socialIcons{
+   display: flex;
+   justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+
+}
+
+.socialIcons a i{
+
+font-size: 2em;
+color: #007bff;
+opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color:#111 ;
+    transition: 0.5s;
+
+}
+
+.socialIcons a:hover{
+    color: rgb(29, 30, 97);
+    transition: 0.5s;
+
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+header.container {
+        flex-direction: column;
+    }
+    
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    .place-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    .place-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+}
+
+.body{
+    background-color: #081b29;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #044576;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgb(93, 233, 123);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #4f85f3;
+    color: white;
+}
+tr:hover {
+    background-color: #173c1d;
+}
+caption {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
